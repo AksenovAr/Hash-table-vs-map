@@ -11,7 +11,7 @@ my_data_structure data;
 
 void reader(){
     std::shared_lock<std::shared_timed_mutex> lk(m);
-    do_something_with(data);
+    read_something(data);
 }
 
 void writer(){
